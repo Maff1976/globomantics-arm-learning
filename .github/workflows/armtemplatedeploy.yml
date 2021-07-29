@@ -34,5 +34,8 @@ jobs:
           resourceGroupName: rg-githubactions
           subscriptionId: f8ad2745-edf3-4367-8029-db6162224aec
           template: ./arm-templates/storageaccount.json
-          parameters: ./arm-templates/storageaccount.parameters.json      
+          parameters:
+             ./arm-templates/storageaccount.parameters.json      
+             storageAccountName=globostg002
+             location="UK South"
           deploymentMode: incremental    
